@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--OffBlack);
+    color: var(--White);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.main-container {
+    border: 1px solid var(--OffBlack);
+    background-color: var(--DarkGrey);
+    width: 380px;
+    height: 600px;
+    margin: 170px auto;
+    border-radius: 15px;
+}
+
+section {
+    margin: 40px auto;
+    height: 530px;
+    width: 300px;
+}
+
+.image {
+    background-image: url(./assets/images/avatar-jessica.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 83px;
+    width: 83px;
+    margin-left: 100px;
+    border-radius: 50%;
+}
+
+.personal-info {
+    display: grid;
+    justify-content: center;
+    margin: 30px auto;
+    font-weight: 600;
+}
+.personal-info h2 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.personal-info p {
+    color: var(--Green);
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.description {
+    font-size: 12px;
+    margin-left: 30px;
+    margin-bottom: 24px;
+}
+
+.button-container {
+    display: grid;
+    gap: 15px;
+    
+}
+
+.button-container button {
+    background-color: var(--Grey);
+    border-radius: 10px;
+    color: var(--White);
+    height: 45px;
+    font-weight: 600;
+    border: none;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--Green);
+    color: var(--DarkGrey);
+}
+
+
+/*...........Footer.............*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
